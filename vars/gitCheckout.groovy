@@ -1,5 +1,5 @@
-def call ( map stageargs ) {
+def call (Map stageArgs) {
     checkout scmGit(
-        branches: [[name: stageargs.branch ]],  
-        userRemoteConfigs: [[url: stageargs.url]])
+        branches: [[name: stageArgs.branch ]],  
+        userRemoteConfigs: [[url: stageArgs.url]])
 }
