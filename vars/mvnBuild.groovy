@@ -1,4 +1,8 @@
 def call ()
 {
-    sh 'mvn clean install'
+    sh '''
+    pwd
+    whoami
+    mvn clean install
+    '''
 }
