@@ -5,7 +5,7 @@
         usernameVariable: 'USER')]) {
      sh " docker login -u '$USER' -p '$PASS' "
 }
-     sh """ docker image push ${dockerHubuserName}/${appname} ${dockerHubuserName}/${appname}:${imageTag}
-            docker image push ${dockerHubuserName}/${appname} ${dockerHubuserName}/${appname}:latest
+     sh """ docker image push ${dockerHubuserName}/${appname}:${imageTag}
+            docker image push ${dockerHubuserName}/${appname}:latest
         """
     }
