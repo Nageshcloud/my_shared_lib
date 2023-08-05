@@ -1,3 +1,7 @@
 def call (){
-    sh 'mvn test'
+    sh '''
+    pwd
+    whoami
+    mvn test
+    '''
 }
